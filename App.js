@@ -1,21 +1,23 @@
-import React from 'react'
-import { createStackNavigator  } from '@react-navigation/stack';
-
-import Exemple from './src/Pages/Exemple'
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { SafeAreaView, StyleSheet} from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
+import Routes from './src/Routes'
 
-const Stack = createStackNavigator();
 
-export default ({navigation}) => {
-    return(
-      <NavigationContainer>
-         <Stack.Navigator screenOptions={{
-            headerShown: false
-        }}>
-          <Stack.Screen name="Exemple" component={Exemple}/>
-            
-        </Stack.Navigator>
-      </NavigationContainer>
-       
-    )
+export default function App() {
+  return (
+    <NavigationContainer>
+      <SafeAreaView style={styles.container}>
+        <StatusBar style="auto" />
+        <Routes/>
+      </SafeAreaView>
+    </NavigationContainer>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+});
