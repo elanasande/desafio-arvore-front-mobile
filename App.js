@@ -1,21 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { createStackNavigator  } from '@react-navigation/stack';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Desafio Árvore!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import Exemple from './src/Pages/Exemple'
+import { NavigationContainer } from '@react-navigation/native';
+
+const Stack = createStackNavigator();
+
+export default ({navigation}) => {
+    return(
+      <NavigationContainer>
+         <Stack.Navigator screenOptions={{
+            headerShown: false
+        }}>
+          <Stack.Screen name="Exemple" component={Exemple}/>
+            
+        </Stack.Navigator>
+      </NavigationContainer>
+       
+    )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
