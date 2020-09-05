@@ -14,8 +14,8 @@ export const Text = Styles.Text`
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
-    text-align: center;
     alignSelf: center;
-
+    alignContent: center;
+    paddingVertical: 9px;
     color: #FFFFFF;
 `;
