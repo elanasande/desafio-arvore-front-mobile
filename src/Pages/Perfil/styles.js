@@ -68,7 +68,8 @@ export const Arrow = Styles.TouchableOpacity `
     width: 50px;
     height:  36px;
     position: absolute;
-    left: 20px;
+    paddingVertical: 3px;
+    left: 10px;
     top: 20px;
 `;
 export const ImgArrow = Styles.Image`
@@ -86,7 +87,7 @@ export const Adicionar = Styles.TouchableOpacity `
     drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.28));
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 24px;
     backgroundColor: #45D0C1;
 `;
 export const AdicionarText = Styles.Text`
@@ -98,4 +99,14 @@ export const AdicionarText = Styles.Text`
     alignContent: center;
     paddingVertical: 9px;
     color: #FFFFFF;
+`;
+
+
+export const Titulo = Styles.Text`
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26.653px;
+    line-height: 32px;
+    color: #595A5C;
+
 `;

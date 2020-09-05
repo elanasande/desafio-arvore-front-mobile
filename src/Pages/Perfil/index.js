@@ -3,7 +3,8 @@ import { Text, Header, ImageBackground, TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 
 import {  View, Container, ImgIni, Profile, ImgProfile, Nome,
-     ViewPerfil, Adicionar, AdicionarText, Arrow, ImgArrow} from './styles'
+     ViewPerfil, Adicionar, AdicionarText, Arrow, ImgArrow,
+    Titulo} from './styles'
 
 import Button from '../../Components/Button'
 import Input from '../../Components/Input'
@@ -17,7 +18,7 @@ const Perfil = () => {
     const navigation = useNavigation();
 
     function handleAdicionar() {
-        navigation.navigate('Exemple');
+        navigation.navigate('Crianca');
       }
 
     return (
@@ -29,7 +30,7 @@ const Perfil = () => {
                 <AdicionarText>Adicionar</AdicionarText>
             </Adicionar>
         
-            <Text>Quem está usando?</Text>  
+            <Titulo>Quem está usando?</Titulo>  
             
            <ViewPerfil>
             <Profile>
