@@ -8,6 +8,6 @@ export const TextInput = Styles.TextInput`
     font-size: 15px;
     line-height: 18px;
     line-height: 22px;
-    marginBottom: 30px;
-    color: #9B9B9B;
+    marginBottom: 20px;
+    color: ${props => props.color};
 `;
