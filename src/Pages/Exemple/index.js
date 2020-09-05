@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, ImageBackground } from 'react-native'
+import { Text, ImageBackground, TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 
 import {  View, Container, LogoApp, ImgIni, Texto, Redes, Row, Line, Title, Textobtn} from './styles'
@@ -9,10 +9,17 @@ import Input from '../../Components/Input'
 import ImgInicio from '../../Assets/logoArvore.png';
 import ImgLogo from '../../Assets/quadrada.png';
 
+
 const Exemple = () => {
 
     const navigation = useNavigation();
 
+    function handlePerfil() {
+        navigation.navigate('Perfil');
+      }
+    function handleCadastro() {
+        navigation.navigate('Cadastro');
+      }
     return (
         <View>
             <LogoApp source={ImgLogo}></LogoApp>
@@ -20,9 +27,12 @@ const Exemple = () => {
             <Input name="email" color= "#9B9B9B" placeholder="E-mail"/>
             <Input name="password" color= "#9B9B9B" placeholder="Senha" secureTextEntry={true}/>
             <Button title="Entrar"
-                onPress={() => navigation.goBack()}
+                onPress={handlePerfil}
             />
-            <Texto>Não possui uma conta? Cadastre-se.</Texto>
+            <TouchableOpacity onPress={handleCadastro}>
+                <Texto>Não possui uma conta? Cadastre-se.</Texto>
+            </TouchableOpacity>
+            
             <Row>
                 <Line/>
                 <Title>ou</Title>

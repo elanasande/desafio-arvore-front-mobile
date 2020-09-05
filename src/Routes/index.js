@@ -1,18 +1,11 @@
 import React from 'react'
+import AppRouter from './AppRouter';
 
-import Exemple from '../Pages/Exemple'
-import Cadastro from '../Pages/Cadastro'
-import { createStackNavigator  } from '@react-navigation/stack';
+const Routes = () => {
 
-const Stack = createStackNavigator();
-
-export default function Routes(){
-    return(
-        <Stack.Navigator screenOptions={{
-            headerShown: false
-        }}>    
-            <Stack.Screen name="Cadastro" component={Cadastro}/>
-            <Stack.Screen name="Exemple" component={Exemple}/>
-        </Stack.Navigator>
-    )
+  return (
+      <AppRouter/>
+  )
 }
+
+export default Routes;
