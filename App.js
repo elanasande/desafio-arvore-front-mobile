@@ -5,16 +5,24 @@ import { NavigationContainer } from '@react-navigation/native';
 import Routes from './src/Routes'
 
 
+
 export default function App() {
   return (
     <NavigationContainer>
+      
       <SafeAreaView style={styles.container}>
         <StatusBar style="auto" />
         <Routes/>
       </SafeAreaView>
+     
     </NavigationContainer>
   );
 }
+
+export default function Main(){
+  return <App/>
+}
+
 
 const styles = StyleSheet.create({
   container: {
