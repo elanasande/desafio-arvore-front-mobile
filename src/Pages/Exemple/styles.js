@@ -19,14 +19,14 @@ export const Container = Styles.ImageBackground`
 export const LogoApp = Styles.ImageBackground`
    justifyContent: center;
     marginVertical: 16px;
-    width: 126px;
+    width: 108px;
     height: 125px;
 `;
 
 export const ImgIni = Styles.Image`
     alignSelf: center;
     width: 106.25px;
-    height: 25px;
+    height: 25px
     marginVertical: 10px;
     marginTop: 24%;
     bottom: 0px;
@@ -53,17 +53,18 @@ export const Row = Styles.View`
     `;
 export const Line = Styles.View`
     width: 36%;
-    height: 1;
+    height: 1px;
     backgroundColor: #E5E5E5;
     margin: 8px;
-        `;
+`;
 
   
 export const Title= Styles.Text `
         fontSize: 20px;
         fontWeight: bold;
         color: #E5E5E5;
-        `;
+    `;
+
 export const Redes = Styles.TouchableOpacity`
     alignSelf: center;
     backgroundColor: ${props => props.color};

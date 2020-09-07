@@ -19,7 +19,7 @@ const Adicionar = () => {
         navigation.navigate('Crianca');
       }
       function handleTutorial() {
-        navigation.navigate('Tutorial');
+        navigation.navigate('Perfil');
       }
     return (
         <View>   

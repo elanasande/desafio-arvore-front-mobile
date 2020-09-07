@@ -102,8 +102,6 @@ export const SinopseTitulo = Styles.Text`
 
     color: #FF995A;
 
-    left: -112px;
-
 `;
 
 export const Icones = Styles.Image`

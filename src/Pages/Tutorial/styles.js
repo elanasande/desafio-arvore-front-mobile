@@ -57,8 +57,8 @@ export const Texto = Styles.Text`
     font-size: 15px;
     line-height: 18px;
     /* Roxo */
-
-    color: #D298C7;
+    width: 209px;
+    color: #303030;;
 `;
 
 export const Answer = Styles.TouchableOpacity`
@@ -104,5 +104,23 @@ export const Titulo = Styles.Text`
     font-size: 26.653px;
     line-height: 32px;
     color: #595A5C;
+    top: 24px;
+    position: absolute;
+
+`;
+
+export const ViewPular = Styles.View`
+    alignSelf: flex-end;
+    paddingVertical: 3%;
+
+`;
+
+export const Pular = Styles.Text`
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.253px;
+    line-height: 13px;
+    color: #AAAAAA;
+    paddingHorizontal: 12%;
 
 `;

@@ -5,7 +5,7 @@ import { View , Container, ImgIni, Row, Texto, LogoApp} from './styles'
 import Button from '../../Components/Button'
 import Input from '../../Components/Input'
 import ImgInicio from '../../Assets/logoArvore.png';
-import ImgLogo from '../../Assets/quadrada.png';
+import ImgLogo from '../../Assets/juntim.png';
 
 import { CheckBox, Text} from "react-native";
 

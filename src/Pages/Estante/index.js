@@ -10,12 +10,10 @@ import ImgLogo from '../../Assets/juntim.png';
 import ImgLupa from '../../Assets/lupa.png';
 import ImgUp from '../../Assets/chevron-up.png';
 import Imgbook from '../../Assets/Imagem.png';
-import Imgbook2 from '../../Assets/Rectangle28.png';
-import Imgbook3 from '../../Assets/Rectangle29.png';
 import Livro from '../../Components/Livro';
 
 
-const Biblioteca = () => {
+const Estante = () => {
     const navigation = useNavigation();
 
     function handleLivro() {
@@ -35,9 +33,9 @@ const Biblioteca = () => {
                 <ScrollView horizontal={true}>
                      <Livro title="Cabelo Bom é o Quê?" autor="Rodrigo Goecks" source={Imgbook} onPress={handleLivro}>
                     </Livro>
-                    <Livro title="As Aventuras do Gatinho Tico" autor="Roberto Belli" source={Imgbook2}>
+                    <Livro title="Cabelo Bom é o Quê?" autor="Rodrigo Goecks" source={Imgbook}>
                     </Livro>
-                    <Livro title="Maravilhândia" autor="Lilia Iasi" source={Imgbook3}>
+                    <Livro title="Cabelo Bom é o Quê?" autor="Rodrigo Goecks" source={Imgbook}>
                     </Livro>
                     <Livro title="Cabelo Bom é o Quê?" autor="Rodrigo Goecks" source={Imgbook}>
                     </Livro>
@@ -49,8 +47,8 @@ const Biblioteca = () => {
                 <Tag>Autocuidado</Tag>
                     <Livro title="Cabelo Bom é o Quê?" autor="Rodrigo Goecks" source={Imgbook}>
                     </Livro>
-                <Tag>Aventura</Tag>
-                <Livro title="As Aventuras do Gatinho Tico" autor="Roberto Belli" source={Imgbook2}>
+                <Tag>Ação</Tag>
+                    <Livro title="Cabelo Bom é o Quê?" autor="Rodrigo Goecks" source={Imgbook}>
                     </Livro>
             </ScrollView>
                 
@@ -63,4 +61,4 @@ const Biblioteca = () => {
 
 }
 
-export default Biblioteca
+export default Estante

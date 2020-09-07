@@ -1,32 +1,30 @@
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
-import { View , Container, ImgIni, Row, Texto, 
-    Avatar, Answer, ScrollView, Arrow, ImgArrow, Titulo, Capa, Ilustra, H2} from './styles'
+import { View , Texto, 
+            ScrollView, Arrow, ImgArrow, 
+            Titulo, Ilustra, H2,
+        Acessibilidade, ImgAcesso} from './styles'
 
 import Button from '../../Components/Button'
-import Input from '../../Components/Input'
-import ImgInicio from '../../Assets/logoArvore.png';
-import ImgCapa from '../../Assets/Imagem.png';
-import ImgCabelo1 from '../../Assets/cabelo1.png';
 import ImgArrowLeft from '../../Assets/arrow-left.png';
 import ImgErros from '../../Assets/7erros.png';
-
-import { CheckBox, Text} from "react-native";
+import ImgErros2 from '../../Assets/7erros2.png';
+import ImgAcessibilidade from '../../Assets/icon-acessibilidade-2.png';
 
 const Erros = () => {
     const navigation = useNavigation();
 
-    function handleLeitura() {
-        navigation.navigate('Crianca');
-      }
-      function handleTutorial() {
-        navigation.navigate('Tutorial');
+    function handleDescoberta() {
+        navigation.navigate('Descoberta');
       }
     return (
         <View>   
             <Arrow onPress={() => navigation.goBack()}>
             <ImgArrow source={ImgArrowLeft}></ImgArrow>
             </Arrow>
+            <Acessibilidade onPress={() => navigation.goBack()}>
+            <ImgAcesso source={ImgAcessibilidade}></ImgAcesso>
+            </Acessibilidade>
             <Titulo></Titulo>
             <ScrollView>
                 <H2>
@@ -38,13 +36,13 @@ const Erros = () => {
                       Antes de continuarem com a leitura, que tal mostrar para ela onde estão?
                        Lembrem-se de procurar com bastante atenção!</Texto>
                 <Ilustra source={ImgErros}/>
-                <Ilustra source={ImgErros}/>
+                <Ilustra source={ImgErros2}/>
                 <Texto></Texto>
               
                    
          
-            <Button title="Continuar Leitura"
-            onPress={handleLeitura}
+            <Button title="Continuar"
+            onPress={handleDescoberta}
             />     
             </ScrollView>
             <Texto></Texto>

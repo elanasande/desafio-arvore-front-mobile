@@ -5,10 +5,10 @@ export const View = Styles.View`
     
     justifyContent: center;
     align-items: center;
-    height:100%;
+    top:20px;
 `;
 export const Container = Styles.ImageBackground`
-
+    border-radius: 200px;
     justifyContent: center;
     marginVertical: 10px;
     padding: 24px;
@@ -17,9 +17,10 @@ export const Container = Styles.ImageBackground`
 
 export const LogoApp = Styles.ImageBackground`
    justifyContent: center;
-    marginVertical: 24px;
-    width: 122px;
-    height: 36px;
+    width: 62px;
+    height: 18px;
+    marginBottom: 10px;
+    
 `;
 
 export const ImgIni = Styles.Image`
@@ -27,8 +28,7 @@ export const ImgIni = Styles.Image`
     width: 69px;
     height: 16px;
     marginVertical: 10px;
-    marginTop: 24%;
-    bottom: 0px;
+    bottom: 8px;
 `;
 
 export const Row = Styles.View`
@@ -42,11 +42,35 @@ export const Row = Styles.View`
 export const Texto = Styles.Text`
     font-style: normal;
     font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    /* Roxo */
+
+    color: #D298C7;
+`;
+
+export const Titulo = Styles.Text`
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26.653px;
+    line-height: 32px;
+    color: #595A5C;
+`;
+
+export const Tag = Styles.Text`
+    alignItems:center;
+    font-style: normal;
+    font-weight: 600;
     font-size: 11.253px;
     line-height: 13px;
-    text-align: center;
-    alignSelf: center;
-
-    color: #AAAAAA;
+    color: #fff;
+    width: 36%;
+    padding: 10px;
+    background: #FF995A;
+    border-radius: 200px;
+    marginVertical: 6px;
 `;
-    
+export const ScrollView = Styles.ScrollView`
+    overflow:hidden;
+    width:280px;
+`;

@@ -7,6 +7,7 @@ export const TouchableOpacity = Styles.TouchableOpacity `
     width: 280px;
     height: 36px;
     drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.28));
+    margin: 5px;
 `;
 
 export const Text = Styles.Text`

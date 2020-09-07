@@ -20,7 +20,9 @@ const Perfil = () => {
     function handleAdicionar() {
         navigation.navigate('Crianca');
       }
-
+      function handleBiblioteca() {
+        navigation.navigate('Biblioteca');
+      }
     return (
         <View>
             <Arrow onPress={() => navigation.goBack()}>
@@ -33,17 +35,13 @@ const Perfil = () => {
             <Titulo>Quem está usando?</Titulo>  
             
            <ViewPerfil>
-            <Profile>
+            <Profile onPress={handleBiblioteca}>
             <ImgProfile source={ImgInicio}></ImgProfile>
-                <Nome>Elana</Nome>
+                <Nome>Camila</Nome>
             </Profile>
-            <Profile>
+            <Profile onPress={handleBiblioteca}>
             <ImgProfile source={ImgInicio}></ImgProfile>
-                <Nome>Maria</Nome>
-            </Profile>
-            <Profile>
-            <ImgProfile source={ImgInicio}></ImgProfile>
-                <Nome>Joao</Nome>
+                <Nome>Gael</Nome>
             </Profile>
             </ViewPerfil>
            <Container>

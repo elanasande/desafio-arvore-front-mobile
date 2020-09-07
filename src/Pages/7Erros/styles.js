@@ -7,22 +7,6 @@ export const View = Styles.View`
     align-items: center;
     paddingTop: 24px;
 `;
-export const Container = Styles.ImageBackground`
-    border-radius: 200px;
-    justifyContent: center;
-    marginVertical: 10px;
-    padding: 24px;
-    height: 25px;
-`;
-
-export const ImgIni = Styles.Image`
-    alignSelf: center;
-    width: 69px;
-    height: 16px;
-    marginVertical: 10px;
-    marginTop: 24%;
-    bottom: 0px;
-`;
 
 export const Arrow = Styles.TouchableOpacity `
     alignSelf: center;
@@ -40,16 +24,26 @@ export const ImgArrow = Styles.Image`
     height: 24px;
 `;
 
+export const Acessibilidade = Styles.TouchableOpacity `
+    alignSelf: center;
+    align-items: center;
+    width: 40px;
+    height:  28px;
+    position: absolute;
+    paddingVertical: 3px;
+    right: 10px;
+    top: 20px;
+`;
+export const ImgAcesso = Styles.Image`
+    alignSelf: center;
+    width:  24px;
+    height: 24px;
+`;
+
 export const ScrollView = Styles.ScrollView`
     width: 280px;
 `;
 
-export const Capa = Styles.Image`
-    alignSelf: center;
-    width:  280px;
-    height: 400px;
-    marginVertical: 12px;
-`;
 export const Ilustra = Styles.Image`
     alignSelf: center;
     width:  280px;

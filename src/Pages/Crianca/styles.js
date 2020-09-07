@@ -85,8 +85,8 @@ export const Textobtn = Styles.Text`
 export const Arrow = Styles.TouchableOpacity `
     alignSelf: center;
     align-items: center;
-    width: 50px;
-    height:  36px;
+    width: 40px;
+    height:  28px;
     position: absolute;
     paddingVertical: 3px;
     left: 10px;
@@ -94,8 +94,8 @@ export const Arrow = Styles.TouchableOpacity `
 `;
 export const ImgArrow = Styles.Image`
     alignSelf: center;
-    width: 40px;
-    height: 36px;
+    width:  36px;
+    height: 24px;
 `;
 
 export const Titulo = Styles.Text`
